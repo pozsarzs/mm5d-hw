@@ -28,12 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:pozsarzs
 LIBS:mm5d-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 4
 Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
 Rev "191101"

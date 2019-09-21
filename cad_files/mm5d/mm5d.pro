@@ -1,4 +1,4 @@
-update=2019. aug. 17., szombat, 22:19:33 CEST
+update=2019. szept. 21., szombat, 08:49:05 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=pozsarzs

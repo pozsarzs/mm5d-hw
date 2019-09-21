@@ -28,12 +28,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:pozsarzs
 LIBS:mm5d-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 4
 Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
 Rev "191101"
@@ -48,11 +49,11 @@ Text HLabel 1200 6700 0    60   Input ~ 0
 Text HLabel 1200 7200 0    60   UnSpc ~ 0
 GND
 Text HLabel 1200 5275 0    60   Input ~ 0
-DIN
+MOSI
 Text HLabel 1200 5375 0    60   Input ~ 0
-CS
+CE0
 Text HLabel 1200 5475 0    60   Input ~ 0
-CLK
+SCLK
 Text HLabel 1200 2825 0    60   Input ~ 0
 LED1
 Text HLabel 1200 2925 0    60   Input ~ 0
