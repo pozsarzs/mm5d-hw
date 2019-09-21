@@ -34,9 +34,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
-Title "MM5D equipment"
+Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
-Rev "190915"
+Rev "191101"
 Comp ""
 Comment1 ""
 Comment2 ""
