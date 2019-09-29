@@ -38,11 +38,11 @@ Sheet 2 4
 Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
 Rev "191101"
-Comp ""
-Comment1 ""
+Comp "Pozsar Zsolt -  http://www.szerafingomba.hu"
+Comment1 "Unit U3"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Draw no.: 59/2/4"
 $EndDescr
 Text HLabel 7100 7775 2    60   Output ~ 0
 OUT1

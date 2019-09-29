@@ -38,11 +38,11 @@ Sheet 4 4
 Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
 Rev "191101"
-Comp "Pozsar Zsolt"
-Comment1 "U6 - Display unit"
+Comp "Pozsar Zsolt -  http://www.szerafingomba.hu"
+Comment1 "Unit U6"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Draw no.: 59/5/5"
 $EndDescr
 Text HLabel 1350 7675 0    60   Input ~ 0
 +5V

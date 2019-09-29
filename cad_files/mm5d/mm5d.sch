@@ -38,11 +38,11 @@ Sheet 1 4
 Title "MM5D controlling and remote monitoring equipment"
 Date "2019-09-15"
 Rev "191101"
-Comp "Pozsar Zsolt"
+Comp "Pozsar Zsolt -  http://www.szerafingomba.hu"
 Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Draw no.: 59/5/2"
 $EndDescr
 $Sheet
 S 5700 7700 875  1400

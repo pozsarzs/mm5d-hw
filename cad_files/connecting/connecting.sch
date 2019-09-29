@@ -38,11 +38,11 @@ Sheet 1 1
 Title "MM4A Electrical distribution and switching unit"
 Date "2019-09-19"
 Rev "190919"
-Comp "Pozsar Zsolt"
+Comp "Pozsar Zsolt -  http://www.szerafingomba.hu"
 Comment1 "Connecting of unit"
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "Draw no.: 59/5/6"
 $EndDescr
 $Comp
 L SCREW_CONN_1 P17
