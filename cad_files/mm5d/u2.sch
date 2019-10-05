@@ -188,15 +188,15 @@ Text HLabel 1300 6075 0    60   Output ~ 0
 OUT8
 Text HLabel 1300 6900 0    60   Input ~ 0
 +5V-IN
-Text HLabel 1300 7600 0    60   UnSpc ~ 0
+Text HLabel 1300 7425 0    60   UnSpc ~ 0
 GND-IN
-Text HLabel 1300 7700 0    60   UnSpc ~ 0
+Text HLabel 1300 7525 0    60   UnSpc ~ 0
 GND-1
-Text HLabel 1300 7800 0    60   UnSpc ~ 0
+Text HLabel 1300 7625 0    60   UnSpc ~ 0
 GND-2
-Text HLabel 1300 7900 0    60   UnSpc ~ 0
+Text HLabel 1300 7725 0    60   UnSpc ~ 0
 GND-3
-Text HLabel 1300 8000 0    60   UnSpc ~ 0
+Text HLabel 1300 7825 0    60   UnSpc ~ 0
 GND-4
 Text HLabel 1300 7000 0    60   Output ~ 0
 +5V-1
@@ -220,17 +220,17 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5D8792DE
-P 1450 8425
-F 0 "#PWR?" H 1450 8175 50  0001 C CNN
-F 1 "GND" H 1450 8275 50  0001 C CNN
-F 2 "" H 1450 8425 50  0000 C CNN
-F 3 "" H 1450 8425 50  0000 C CNN
-	1    1450 8425
+P 1450 8350
+F 0 "#PWR?" H 1450 8100 50  0001 C CNN
+F 1 "GND" H 1450 8200 50  0001 C CNN
+F 2 "" H 1450 8350 50  0000 C CNN
+F 3 "" H 1450 8350 50  0000 C CNN
+	1    1450 8350
 	1    0    0    -1  
 $EndComp
-Text HLabel 1300 7400 0    60   Output ~ 0
+Text HLabel 1300 8650 0    60   Output ~ 0
 +3.3V-1
-Text HLabel 1300 7500 0    60   Output ~ 0
+Text HLabel 1300 8750 0    60   Output ~ 0
 +3.3V-2
 $Comp
 L MAX232 U201
@@ -252,6 +252,96 @@ F 1 "100n" H 4050 6050 50  0000 L CNN
 F 2 "" H 4338 6025 50  0000 C CNN
 F 3 "" H 4300 6175 50  0000 C CNN
 	1    4300 6175
+	1    0    0    -1  
+$EndComp
+Text HLabel 7050 7425 2    60   Input ~ 0
+RXD
+Text HLabel 7050 7025 2    60   Output ~ 0
+TXD
+Text HLabel 7050 8275 2    60   UnSpc ~ 0
+GND
+$Comp
+L CP C201
+U 1 1 5D87BD64
+P 1825 7575
+F 0 "C201" H 1850 7675 50  0000 L CNN
+F 1 "100u" H 1850 7475 50  0000 L CNN
+F 2 "" H 1863 7425 50  0000 C CNN
+F 3 "" H 1825 7575 50  0000 C CNN
+	1    1825 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C204
+U 1 1 5D87C730
+P 6200 6175
+F 0 "C204" H 6275 6300 50  0000 L CNN
+F 1 "100n" H 6275 6050 50  0000 L CNN
+F 2 "" H 6238 6025 50  0000 C CNN
+F 3 "" H 6200 6175 50  0000 C CNN
+	1    6200 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C202
+U 1 1 5D87C78C
+P 6325 5400
+F 0 "C202" V 6425 5500 50  0000 L CNN
+F 1 "100n" V 6150 5325 50  0000 L CNN
+F 2 "" H 6363 5250 50  0000 C CNN
+F 3 "" H 6325 5400 50  0000 C CNN
+	1    6325 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C205
+U 1 1 5D87C901
+P 6325 6525
+F 0 "C205" V 6425 6625 50  0000 L CNN
+F 1 "100n" V 6325 6000 50  0000 L CNN
+F 2 "" H 6363 6375 50  0000 C CNN
+F 3 "" H 6325 6525 50  0000 C CNN
+	1    6325 6525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C206
+U 1 1 5D87C93D
+P 6325 6825
+F 0 "C206" V 6425 6925 50  0000 L CNN
+F 1 "100n" V 6325 6300 50  0000 L CNN
+F 2 "" H 6363 6675 50  0000 C CNN
+F 3 "" H 6325 6825 50  0000 C CNN
+	1    6325 6825
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4225 3550
+NoConn ~ 4525 3550
+NoConn ~ 4525 3050
+NoConn ~ 4425 3050
+Text Notes 3325 2150 0    60   ~ 0
+Connector for the Rasperry Pi GPIO port
+Text Notes 1025 5850 0    50   ~ 0
+P202
+Text Notes 1025 8300 0    60   ~ 0
+P203
+Text Notes 7075 7875 0    60   ~ 0
+P204
+Text Notes 7100 3250 0    60   ~ 0
+P202
+Text HLabel 1300 8850 0    60   UnSpc ~ 0
+GND-5
+Text HLabel 1300 8950 0    60   UnSpc ~ 0
+GND-6
+$Comp
+L GND #PWR?
+U 1 1 5D98AF29
+P 1450 9025
+F 0 "#PWR?" H 1450 8775 50  0001 C CNN
+F 1 "GND" H 1450 8875 50  0001 C CNN
+F 2 "" H 1450 9025 50  0000 C CNN
+F 3 "" H 1450 9025 50  0000 C CNN
+	1    1450 9025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -438,19 +528,19 @@ Connection ~ 1650 6075
 Wire Wire Line
 	1450 8275 7050 8275
 Wire Wire Line
-	1450 7600 1450 8425
+	1450 7425 1450 8350
 Wire Wire Line
-	1300 8000 1825 8000
-Connection ~ 1450 8000
+	1300 7825 1825 7825
+Connection ~ 1450 7825
 Wire Wire Line
-	1300 7900 1450 7900
-Connection ~ 1450 7900
+	1300 7725 1450 7725
+Connection ~ 1450 7725
 Wire Wire Line
-	1300 7800 1450 7800
-Connection ~ 1450 7800
+	1300 7625 1450 7625
+Connection ~ 1450 7625
 Wire Wire Line
-	1300 7700 1450 7700
-Connection ~ 1450 7700
+	1300 7525 1450 7525
+Connection ~ 1450 7525
 Wire Wire Line
 	1300 7300 3125 7300
 Wire Wire Line
@@ -468,22 +558,21 @@ Wire Wire Line
 	1300 7200 1450 7200
 Connection ~ 1450 7200
 Wire Wire Line
-	1300 7500 1450 7500
+	1300 8750 1450 8750
 Wire Wire Line
-	1450 7500 1450 7400
+	1450 8650 1450 9025
 Wire Wire Line
-	3225 7400 1300 7400
+	3225 8650 1300 8650
 Wire Wire Line
-	3225 3550 3225 7400
+	3225 3550 3225 8650
 Wire Wire Line
 	4025 3700 3225 3700
 Wire Wire Line
 	4025 3550 4025 3700
-Connection ~ 1450 7400
+Connection ~ 1450 8650
 Connection ~ 3225 3700
 Wire Wire Line
 	3125 7300 3125 2975
-Connection ~ 1450 7300
 Connection ~ 3225 2975
 Wire Wire Line
 	3625 3550 3625 8275
@@ -541,16 +630,10 @@ Wire Wire Line
 	4200 7125 4200 7425
 Wire Wire Line
 	4200 7425 4450 7425
-Text HLabel 7050 7425 2    60   Input ~ 0
-RXD
-Text HLabel 7050 7025 2    60   Output ~ 0
-TXD
 Wire Wire Line
 	6050 7025 7050 7025
 Wire Wire Line
 	6050 7425 7050 7425
-Text HLabel 7050 8275 2    60   UnSpc ~ 0
-GND
 Connection ~ 5250 8275
 Wire Wire Line
 	6050 6025 6200 6025
@@ -576,74 +659,20 @@ Wire Wire Line
 Wire Wire Line
 	6175 6525 6050 6525
 Connection ~ 6575 8275
-$Comp
-L CP C201
-U 1 1 5D87BD64
-P 1825 7800
-F 0 "C201" H 1850 7900 50  0000 L CNN
-F 1 "100u" H 1850 7700 50  0000 L CNN
-F 2 "" H 1863 7650 50  0000 C CNN
-F 3 "" H 1825 7800 50  0000 C CNN
-	1    1825 7800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1825 7650 1825 7300
-Connection ~ 1825 7300
+	1825 7825 1825 7725
 Wire Wire Line
-	1825 8000 1825 7950
-Wire Wire Line
-	1450 7600 1300 7600
+	1450 7425 1300 7425
 Connection ~ 3625 8275
 Connection ~ 1450 8275
-$Comp
-L C C204
-U 1 1 5D87C730
-P 6200 6175
-F 0 "C204" H 6275 6300 50  0000 L CNN
-F 1 "100n" H 6275 6050 50  0000 L CNN
-F 2 "" H 6238 6025 50  0000 C CNN
-F 3 "" H 6200 6175 50  0000 C CNN
-	1    6200 6175
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C202
-U 1 1 5D87C78C
-P 6325 5400
-F 0 "C202" V 6425 5500 50  0000 L CNN
-F 1 "100n" V 6150 5325 50  0000 L CNN
-F 2 "" H 6363 5250 50  0000 C CNN
-F 3 "" H 6325 5400 50  0000 C CNN
-	1    6325 5400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C205
-U 1 1 5D87C901
-P 6325 6525
-F 0 "C205" V 6425 6625 50  0000 L CNN
-F 1 "100n" V 6325 6000 50  0000 L CNN
-F 2 "" H 6363 6375 50  0000 C CNN
-F 3 "" H 6325 6525 50  0000 C CNN
-	1    6325 6525
-	0    -1   -1   0   
-$EndComp
-$Comp
-L C C206
-U 1 1 5D87C93D
-P 6325 6825
-F 0 "C206" V 6425 6925 50  0000 L CNN
-F 1 "100n" V 6325 6300 50  0000 L CNN
-F 2 "" H 6363 6675 50  0000 C CNN
-F 3 "" H 6325 6825 50  0000 C CNN
-	1    6325 6825
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 4225 3550
-NoConn ~ 4525 3550
-NoConn ~ 4525 3050
-NoConn ~ 4425 3050
-Text Notes 3325 2150 0    60   ~ 0
-Connector for the Rasperry Pi GPIO port
+Connection ~ 1450 7300
+Wire Wire Line
+	1825 7425 1825 7300
+Connection ~ 1825 7300
+Wire Wire Line
+	1300 8950 1450 8950
+Connection ~ 1450 8950
+Wire Wire Line
+	1300 8850 1450 8850
+Connection ~ 1450 8850
 $EndSCHEMATC
