@@ -741,7 +741,7 @@
 
   (target plus (at 154.94 93.98) (size 5) (width 0.15) (layer Edge.Cuts))
   (dimension 57.15 (width 0.3) (layer Dwgs.User)
-    (gr_text "57,150 mm" (at 176.609999 99.695 90) (layer Dwgs.User)
+    (gr_text "57,150 mm" (at 173.99 100.33 90) (layer Dwgs.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (feature1 (pts (xy 171.45 71.12) (xy 177.959999 71.12)))
@@ -753,7 +753,7 @@
     (arrow2b (pts (xy 175.259999 128.27) (xy 174.673578 127.143496)))
   )
   (dimension 71.12 (width 0.3) (layer Dwgs.User)
-    (gr_text "71,120 mm" (at 135.89 133.429999) (layer Dwgs.User)
+    (gr_text "71,120 mm" (at 135.89 130.81) (layer Dwgs.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (feature1 (pts (xy 171.45 128.27) (xy 171.45 134.779999)))
