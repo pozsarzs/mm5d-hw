@@ -1,0 +1,85 @@
+Wiring of equipment
+~~~~~~~~~~~~~~~~~~~
+  Modules:                        Connectors:              Colors:
+  U1: Raspberry Pi                P1: power supply         red:    +5V
+  U2: GPIO port expansion card    P2: sensor connector     yellow: +3.3V
+  U3: matrix display              P3: console connector    black:  GND
+  U4: front module                                         green:  inputs
+  U5: input module                                         white:  displays
+  U6: 1st relay module                                     blue:   outputs
+  U7: 2nd relay module
+
+--------------------------------------------------------------------------------
+target                      name  pin  |  pin  name                       target
+--------------------------------------------------------------------------------
+                          1st connector on U2 module
+                                     +---+
+P2/1 <--------yellow-----> +3.3V   1 |o o|  2  +5V <-------red------------> F1/2
+                           GPIO2   3 |o o|  4  +5V <-------red----------> U5/VCC
+                           GPIO3   5 |o o|  6  GND <-------black----------> P2/5
+                           GPIO4   7 |o o|  8  TXD <-------green----------> P2/3
+U5/GND <------black--------> GND   9 |o o| 10  RXD <-------green----------> P2/2
+                          GPIO17  11 |o o| 12  GPIO18 <----green----------> P2/2
+U5/OUT1 <-----green-----> GPIO27  13 |o o| 14  GND <-------black----------> P2/3
+U5/OUT4 <-----green-----> GPIO22  15 |o o| 16  GPIO23 <----green-------> U5/OUT3
+U5/VDD <------yellow-----> +3.3V  17 |o o| 18  GPIO24 <----green-------> U5/OUT2
+                            MOSI  19 |o o| 20  GND
+                            MISO  21 |o o| 22  GPIO25
+                            SCLK  23 |o o| 24  CE0
+                             GND  25 |o o| 26  CE1
+                           ID_SD  27 |o o| 28  ID_SC
+                           GPIO5  29 |o o| 30  GND
+                           GPIO6  31 |o o| 32  GPIO12
+                          GPIO13  33 |o o| 34  GND
+                          GPIO19  35 |o o| 36  GPIO16
+U4/SW <-------green-----> GPIO26  37 |o o| 38  GPIO20
+                             GND  39 |o o| 40  GPIO21
+                                     +---+
+                          2nd connector on U2 module
+                                     +---+
+                           +3.3V   1 |o o|  2  +5V <-------red----------> U3/VCC
+                           GPIO2   3 |o o|  4  +5V <-------red----------> U4/VCC
+                           GPIO3   5 |o o|  6  GND <-------black--------> U4/GND
+                           GPIO4   7 |o o|  8  TXD
+                             GND   9 |o o| 10  RXD
+                          GPIO17  11 |o o| 12  GPIO18
+U4/LED1 <-----white-----> GPIO27  13 |o o| 14  GND
+U4/LED4 <-----white-----> GPIO22  15 |o o| 16  GPIO23 <----white-------> U4/LED3
+                           +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
+U3/DIN <------white-------> MOSI  19 |o o| 20  GND
+                            MISO  21 |o o| 22  GPIO25 <----white------> U4/LED13
+U3/CLK <------white-------> SCLK  23 |o o| 24  CE0 <-------white---------> U3/CS
+U3/GND <------black--------> GND  25 |o o| 26  CE1
+                           ID_SD  27 |o o| 28  ID_SC
+U4/LED9 <-----white------> GPIO5  29 |o o| 30  GND
+U4/LED10 <----white------> GPIO6  31 |o o| 32  GPIO12 <----white-------> U4/LED5
+U4/LED11 <----white-----> GPIO13  33 |o o| 34  GND
+U4/LED12 <----white-----> GPIO19  35 |o o| 36  GPIO16 <----white-------> U4/LED6
+                          GPIO26  37 |o o| 38  GPIO20 <----white-------> U4/LED7
+                             GND  39 |o o| 40  GPIO21 <----white-------> U4/LED8
+                                     +---+
+                          3rd connector on U2 module
+                                     +---+
+                           +3.3V   1 |o o|  2  +5V <-------red----------> U6/VCC
+U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V <-------red----------> U7/VCC
+U7/IN2 <------blue-------> GPIO3   5 |o o|  6  GND <-------black--------> U6/GND
+U7/IN3 <------blue-------> GPIO4   7 |o o|  8  TXD
+                             GND   9 |o o| 10  RXD
+                          GPIO17  11 |o o| 12  GPIO18
+                          GPIO27  13 |o o| 14  GND <-------black--------> U7/GND
+                          GPIO22  15 |o o| 16  GPIO23
+                           +3.3V  17 |o o| 18  GPIO24
+                            MOSI  19 |o o| 20  GND
+                            MISO  21 |o o| 22  GPIO25
+                            SCLK  23 |o o| 24  CE0
+                             GND  25 |o o| 26  CE1
+                           ID_SD  27 |o o| 28  ID_SC
+U6/IN1 <------blue-------> GPIO5  29 |o o| 30  GND
+U6/IN2 <------blue-------> GPIO6  31 |o o| 32  GPIO12
+U6/IN3 <------blue------> GPIO13  33 |o o| 34  GND
+U6/IN4 <------blue------> GPIO19  35 |o o| 36  GPIO16
+                          GPIO26  37 |o o| 38  GPIO20
+                             GND  39 |o o| 40  GPIO21
+                                     +---+
+---------------------------------------------------------------------------------
+ MM5D * Copyright (C) 2019-2020 Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>
