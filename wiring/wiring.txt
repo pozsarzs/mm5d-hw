@@ -60,8 +60,8 @@ U4/LED12 <----white-----> GPIO19  35 |o o| 36  GPIO16 <----white-------> U4/LED6
                                      +---+
                           3rd connector on U2 module
                                      +---+
-                           +3.3V   1 |o o|  2  +5V <-------red----------> U6/VCC
-U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V <-------red----------> U7/VCC
+                           +3.3V   1 |o o|  2  +5V <-------red----------> U7/VCC
+U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V <-------red----------> U6/VCC
 U7/IN2 <------blue-------> GPIO3   5 |o o|  6  GND <-------black--------> U6/GND
 U7/IN3 <------blue-------> GPIO4   7 |o o|  8  TXD
                              GND   9 |o o| 10  RXD
