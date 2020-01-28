@@ -4,9 +4,9 @@ Wiring of equipment
   U1: Raspberry Pi                P1: power supply         red:    +5V
   U2: GPIO port expansion card    P2: sensor connector     yellow: +3.3V
   U3: matrix display              P3: console connector    black:  GND
-  U4: front module                                         green:  inputs
-  U5: input module                                         white:  displays
-  U6: 1st relay module                                     blue:   outputs
+  U4: front module                P4: plug to U2           green:  inputs
+  U5: input module                P5: plug to U2           white:  displays
+  U6: 1st relay module            P6: plug to U2           blue:   outputs
   U7: 2nd relay module
 
 --------------------------------------------------------------------------------
@@ -45,7 +45,7 @@ U4/SW <-------green-----> GPIO26  37 |o o| 38  GPIO20
                           GPIO17  11 |o o| 12  GPIO18
 U4/LED1 <-----white-----> GPIO27  13 |o o| 14  GND
 U4/LED4 <-----white-----> GPIO22  15 |o o| 16  GPIO23 <----white-------> U4/LED3
-                           +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
+U4/VDD <------yellow---->  +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
 U3/DIN <------white-------> MOSI  19 |o o| 20  GND
                             MISO  21 |o o| 22  GPIO25 <----white------> U4/LED13
 U3/CLK <------white-------> SCLK  23 |o o| 24  CE0 <-------white---------> U3/CS

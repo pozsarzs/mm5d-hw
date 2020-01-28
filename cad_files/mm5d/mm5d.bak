@@ -189,12 +189,12 @@ $EndComp
 $Comp
 L Relay_panel U5
 U 1 1 5D85EA39
-P 9950 2250
-F 0 "U5" H 9700 2950 60  0001 C CNN
-F 1 "Relay_panel" H 9950 1500 60  0001 C CNN
-F 2 "" H 9950 2250 60  0000 C CNN
-F 3 "" H 9950 2250 60  0000 C CNN
-	1    9950 2250
+P 20500 9400
+F 0 "U5" H 20250 10100 60  0001 C CNN
+F 1 "Relay_panel" H 20500 8650 60  0001 C CNN
+F 2 "" H 20500 9400 60  0000 C CNN
+F 3 "" H 20500 9400 60  0000 C CNN
+	1    20500 9400
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
@@ -1649,26 +1649,4 @@ Text Label 6050 2300 0    60   ~ 0
 +5V
 Text Label 6050 2400 0    60   ~ 0
 GND
-$Comp
-L Relay_panel U?
-U 1 1 5E34656E
-P 12850 5650
-F 0 "U?" H 12600 6350 60  0001 C CNN
-F 1 "Relay_panel" H 12850 4900 60  0001 C CNN
-F 2 "" H 12850 5650 60  0000 C CNN
-F 3 "" H 12850 5650 60  0000 C CNN
-	1    12850 5650
-	0    1    1    0   
-$EndComp
-$Comp
-L Matrix_display U?
-U 1 1 5E349EE1
-P 4900 1650
-F 0 "U?" H 4650 2250 60  0000 C CNN
-F 1 "Matrix_display" H 4900 1050 60  0000 C CNN
-F 2 "" H 5350 1050 60  0000 C CNN
-F 3 "" H 4900 1550 60  0000 C CNN
-	1    4900 1650
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
