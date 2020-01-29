@@ -14,13 +14,13 @@ target                      name  pin  |  pin  name                       target
 --------------------------------------------------------------------------------
                           1st connector on U2 module
                                      +---+
-P2/1 <--------yellow-----> +3.3V   1 |o o|  2  +5V <-------red------------> F1/2
+                           +3.3V   1 |o o|  2  +5V <-------red------------> CF1/2
                            GPIO2   3 |o o|  4  +5V <-------red----------> U5/VCC
-                           GPIO3   5 |o o|  6  GND <-------black----------> P2/5
-                           GPIO4   7 |o o|  8  TXD <-------green----------> P2/3
-U5/GND <------black--------> GND   9 |o o| 10  RXD <-------green----------> P2/2
+                           GPIO3   5 |o o|  6  GND <-------black----------> P3/5
+                           GPIO4   7 |o o|  8  TXD <-------green----------> P3/3
+U5/GND <------black--------> GND   9 |o o| 10  RXD <-------green----------> P3/2
                           GPIO17  11 |o o| 12  GPIO18 <----green----------> P2/2
-U5/OUT1 <-----green-----> GPIO27  13 |o o| 14  GND <-------black----------> P2/3
+U5/OUT1 <-----green-----> GPIO27  13 |o o| 14  GND
 U5/OUT4 <-----green-----> GPIO22  15 |o o| 16  GPIO23 <----green-------> U5/OUT3
 U5/VDD <------yellow-----> +3.3V  17 |o o| 18  GPIO24 <----green-------> U5/OUT2
                             MOSI  19 |o o| 20  GND
