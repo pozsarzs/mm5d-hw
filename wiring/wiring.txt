@@ -1,28 +1,18 @@
-Wiring of equipment
-~~~~~~~~~~~~~~~~~~~
-  Modules:                        Connectors:              Colors:
-  U1: Raspberry Pi                P1: power supply         red:    +5V
-  U2: GPIO port expansion card    P2: sensor connector     yellow: +3.3V
-  U3: matrix display              P3: console connector    black:  GND
-  U4: front module                P4: plug to U2           green:  inputs
-  U5: input module                P5: plug to U2           white:  displays
-  U6: 1st relay module            P6: plug to U2           blue:   outputs
-  U7: 2nd relay module
-
+Wiring of MM5D
 --------------------------------------------------------------------------------
 target                      name  pin  |  pin  name                       target
 --------------------------------------------------------------------------------
-                          1st connector on U2 module
+                                      J3
                                      +---+
-                           +3.3V   1 |o o|  2  +5V <-------red------------> CF1/2
-                           GPIO2   3 |o o|  4  +5V <-------red----------> U5/VCC
-                           GPIO3   5 |o o|  6  GND <-------black----------> P3/5
-                           GPIO4   7 |o o|  8  TXD <-------green----------> P3/3
-U5/GND <------black--------> GND   9 |o o| 10  RXD <-------green----------> P3/2
-                          GPIO17  11 |o o| 12  GPIO18 <----green----------> P2/2
+                           +3.3V   1 |o o|  2  +5V <-------red------------> J2/9
+                           GPIO2   3 |o o|  4  +5V <-------red---------> U5/VCC5
+                           GPIO3   5 |o o|  6  GND <-------black----------> J2/5
+                           GPIO4   7 |o o|  8  TXD <-------green----------> J2/3
+U5/GND <------black--------> GND   9 |o o| 10  RXD <-------green----------> J2/2
+                          GPIO17  11 |o o| 12  GPIO18 <----green--------> SENSOR
 U5/OUT1 <-----green-----> GPIO27  13 |o o| 14  GND
 U5/OUT4 <-----green-----> GPIO22  15 |o o| 16  GPIO23 <----green-------> U5/OUT3
-U5/VDD <------yellow-----> +3.3V  17 |o o| 18  GPIO24 <----green-------> U5/OUT2
+U5/VCC3 <-----yellow-----> +3.3V  17 |o o| 18  GPIO24 <----green-------> U5/OUT2
                             MOSI  19 |o o| 20  GND
                             MISO  21 |o o| 22  GPIO25
                             SCLK  23 |o o| 24  CE0
@@ -35,17 +25,17 @@ U5/VDD <------yellow-----> +3.3V  17 |o o| 18  GPIO24 <----green-------> U5/OUT2
 U4/SW <-------green-----> GPIO26  37 |o o| 38  GPIO20
                              GND  39 |o o| 40  GPIO21
                                      +---+
-                          2nd connector on U2 module
+                                      J4
                                      +---+
                            +3.3V   1 |o o|  2  +5V <-------red----------> U3/VCC
-                           GPIO2   3 |o o|  4  +5V <-------red----------> U4/VCC
+                           GPIO2   3 |o o|  4  +5V <-------red----------> F1, D1/C
                            GPIO3   5 |o o|  6  GND <-------black--------> U4/GND
                            GPIO4   7 |o o|  8  TXD
-                             GND   9 |o o| 10  RXD
+J1/2, D1/A <--black--------> GND   9 |o o| 10  RXD
                           GPIO17  11 |o o| 12  GPIO18
 U4/LED1 <-----white-----> GPIO27  13 |o o| 14  GND
 U4/LED4 <-----white-----> GPIO22  15 |o o| 16  GPIO23 <----white-------> U4/LED3
-U4/VDD <------yellow---->  +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
+U4/VCC3 <-----yellow-----> +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
 U3/DIN <------white-------> MOSI  19 |o o| 20  GND
                             MISO  21 |o o| 22  GPIO25 <----white------> U4/LED13
 U3/CLK <------white-------> SCLK  23 |o o| 24  CE0 <-------white---------> U3/CS
@@ -58,7 +48,7 @@ U4/LED12 <----white-----> GPIO19  35 |o o| 36  GPIO16 <----white-------> U4/LED6
                           GPIO26  37 |o o| 38  GPIO20 <----white-------> U4/LED7
                              GND  39 |o o| 40  GPIO21 <----white-------> U4/LED8
                                      +---+
-                          3rd connector on U2 module
+                                      J5
                                      +---+
                            +3.3V   1 |o o|  2  +5V <-------red----------> U7/VCC
 U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V <-------red----------> U6/VCC
@@ -81,5 +71,10 @@ U6/IN4 <------blue------> GPIO19  35 |o o| 36  GPIO16
                           GPIO26  37 |o o| 38  GPIO20
                              GND  39 |o o| 40  GPIO21
                                      +---+
+
+Others:
+J1/1 <--------red-----------> F1
+J1/3 <--------green/yellow--> mounting plate
+
 ---------------------------------------------------------------------------------
  MM5D * Copyright (C) 2019-2020 Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>
