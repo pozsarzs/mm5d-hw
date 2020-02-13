@@ -1,0 +1,28 @@
+Wiring of GPIO port - J4 connector
+--------------------------------------------------------------------------------
+target                      name  pin  |  pin  name                       target
+--------------------------------------------------------------------------------
+                                     +---+
+                           +3.3V   1 |o o|  2  +5V <-------red----------> U3/VCC
+                           GPIO2   3 |o o|  4  +5V <-------red----------> F1, D1/C
+                           GPIO3   5 |o o|  6  GND <-------black--------> U4/GND
+                           GPIO4   7 |o o|  8  TXD
+J1/2, D1/A <--black--------> GND   9 |o o| 10  RXD
+                          GPIO17  11 |o o| 12  GPIO18
+U4/LED1 <-----white-----> GPIO27  13 |o o| 14  GND
+U4/LED4 <-----white-----> GPIO22  15 |o o| 16  GPIO23 <----white-------> U4/LED3
+U4/VCC3 <-----yellow-----> +3.3V  17 |o o| 18  GPIO24 <----white-------> U4/LED2
+U3/DIN <------white-------> MOSI  19 |o o| 20  GND
+                            MISO  21 |o o| 22  GPIO25 <----white------> U4/LED13
+U3/CLK <------white-------> SCLK  23 |o o| 24  CE0 <-------white---------> U3/CS
+U3/GND <------black--------> GND  25 |o o| 26  CE1
+                           ID_SD  27 |o o| 28  ID_SC
+U4/LED9 <-----white------> GPIO5  29 |o o| 30  GND
+U4/LED10 <----white------> GPIO6  31 |o o| 32  GPIO12 <----white-------> U4/LED5
+U4/LED11 <----white-----> GPIO13  33 |o o| 34  GND
+U4/LED12 <----white-----> GPIO19  35 |o o| 36  GPIO16 <----white-------> U4/LED6
+                          GPIO26  37 |o o| 38  GPIO20 <----white-------> U4/LED7
+                             GND  39 |o o| 40  GPIO21 <----white-------> U4/LED8
+                                     +---+
+---------------------------------------------------------------------------------
+ MM5D * Copyright (C) 2019-2020 Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>

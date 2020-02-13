@@ -36,13 +36,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MM4A Electrical distribution and switching unit"
-Date "2019-09-19"
-Rev "190919"
+Date "2019-11-01"
+Rev "191101"
 Comp "Pozsar Zsolt -  http://www.szerafingomba.hu"
 Comment1 "Connecting of unit"
 Comment2 ""
 Comment3 ""
-Comment4 "Draw no.: 59/5/6"
+Comment4 "Draw no.: 59/5/5"
 $EndDescr
 $Comp
 L SCREW_CONN_1 P17
@@ -972,8 +972,8 @@ Wire Wire Line
 	10075 4525 10075 4850
 Text Notes 7450 4500 0    60   ~ 0
 Solenoid\nof valve
-Text Notes 8325 4500 0    60   ~ 0
-Signalling\n  lamp
+Text Notes 9050 3800 0    60   ~ 0
+Signal lamps
 Text Notes 9075 4650 0    60   ~ 0
 G     Y     R
 Wire Wire Line
