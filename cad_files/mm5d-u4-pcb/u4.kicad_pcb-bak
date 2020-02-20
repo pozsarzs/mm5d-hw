@@ -75,11 +75,11 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFEFF7F)
     (pcbplotparams
-      (layerselection 0x01060_80000000)
+      (layerselection 0x01020_80000000)
       (usegerberextensions false)
       (excludeedgelayer false)
       (linewidth 0.150000)
-      (plotframeref false)
+      (plotframeref true)
       (viasonmask false)
       (mode 1)
       (useauxorigin false)

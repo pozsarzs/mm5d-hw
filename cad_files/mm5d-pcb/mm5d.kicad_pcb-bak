@@ -45,7 +45,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 2.5)
     (user_trace_width 1)
     (user_trace_width 2.5)
     (trace_clearance 0.2)
