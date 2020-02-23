@@ -58,12 +58,12 @@ $EndComp
 $Comp
 L Relay_panel U7
 U 1 1 5D85EA39
-P 8650 1350
-F 0 "U7" V 9050 1850 60  0000 C CNN
-F 1 "Relay_panel" H 8650 600 60  0001 C CNN
-F 2 "" H 8650 1350 60  0000 C CNN
-F 3 "" H 8650 1350 60  0000 C CNN
-	1    8650 1350
+P 8650 1250
+F 0 "U7" V 9050 1750 60  0000 C CNN
+F 1 "Relay_panel" H 8650 500 60  0001 C CNN
+F 2 "" H 8650 1250 60  0000 C CNN
+F 3 "" H 8650 1250 60  0000 C CNN
+	1    8650 1250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -89,10 +89,10 @@ F 3 "" H 3500 5950 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_02X20 J4
+L CONN_02X20 JP1
 U 1 1 5E3076A1
 P 5750 3500
-F 0 "J4" H 5750 4550 50  0000 C CNN
+F 0 "JP1" H 5750 4550 50  0000 C CNN
 F 1 "CONN_02X20" V 5750 3500 50  0001 C CNN
 F 2 "" H 5750 2550 50  0000 C CNN
 F 3 "" H 5750 2550 50  0000 C CNN
@@ -100,10 +100,10 @@ F 3 "" H 5750 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X20 J3
+L CONN_02X20 JP2
 U 1 1 5E3088F3
 P 2300 3500
-F 0 "J3" H 2300 4550 50  0000 C CNN
+F 0 "JP2" H 2300 4550 50  0000 C CNN
 F 1 "CONN_02X20" V 2300 3500 50  0001 C CNN
 F 2 "" H 2300 2550 50  0000 C CNN
 F 3 "" H 2300 2550 50  0000 C CNN
@@ -111,10 +111,10 @@ F 3 "" H 2300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X20 J5
+L CONN_02X20 JP4
 U 1 1 5E3094F6
 P 9650 3500
-F 0 "J5" H 9650 4550 50  0000 C CNN
+F 0 "JP4" H 9650 4550 50  0000 C CNN
 F 1 "CONN_02X20" V 9650 3500 50  0001 C CNN
 F 2 "" H 9650 2550 50  0000 C CNN
 F 3 "" H 9650 2550 50  0000 C CNN
@@ -284,7 +284,7 @@ Text Label 9950 2650 0    60   ~ 0
 +5V
 Text Label 8200 4750 0    60   ~ 0
 +5V
-Text Label 8200 2300 0    60   ~ 0
+Text Label 9150 2300 0    60   ~ 0
 +5V
 Text Label 9950 2750 0    60   ~ 0
 GND
@@ -300,7 +300,7 @@ Text Label 9350 2750 2    60   ~ 0
 GPIO03
 Text Label 9350 2850 2    60   ~ 0
 GPIO04
-NoConn ~ 8900 2000
+NoConn ~ 8900 1900
 Text Label 2000 4350 2    60   ~ 0
 GPIO26
 $Sheet
@@ -520,23 +520,23 @@ Wire Wire Line
 Wire Wire Line
 	8200 4750 10300 4750
 Wire Wire Line
-	10300 2650 10300 5300
+	10300 4750 10300 2650
 Wire Wire Line
 	10300 2650 9900 2650
 Wire Wire Line
 	9400 2650 8600 2650
 Wire Wire Line
-	8600 2650 8600 2000
+	8600 2650 8600 1900
 Wire Wire Line
-	8700 2000 8700 2750
+	8700 1900 8700 2750
 Wire Wire Line
 	8700 2750 9400 2750
 Wire Wire Line
-	8800 2000 8800 2850
+	8800 1900 8800 2850
 Wire Wire Line
 	8800 2850 9400 2850
 Wire Wire Line
-	8200 2000 8200 2300
+	8200 1900 8200 2300
 Wire Wire Line
 	8200 2300 10300 2300
 Wire Wire Line
@@ -550,7 +550,7 @@ Wire Wire Line
 Wire Wire Line
 	10400 2200 9100 2200
 Wire Wire Line
-	9100 2200 9100 2000
+	9100 2200 9100 1900
 Wire Wire Line
 	6300 5750 6300 6300
 Wire Wire Line
@@ -835,8 +835,8 @@ Wire Wire Line
 	3900 6600 4425 6600
 Wire Wire Line
 	4425 6600 4425 6750
-Text Notes 7150 6300 0    60   ~ 0
-All unit connected to Raspberry Pi via 3 slot GPIO expansion module by J3-5 plugs.
+Text Notes 7975 6350 0    60   ~ 0
+All unit connected to Raspberry Pi via 3 slot GPIO expansion card\n                   by JP1, JP2 and JP4 plugs.
 $Comp
 L R R1
 U 1 1 5E4515AB
@@ -1022,8 +1022,7 @@ F 3 "" H 9800 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 5300 10250 5300
-Connection ~ 10300 4750
+	10250 5300 10600 5300
 Wire Wire Line
 	8400 4925 8400 4850
 Wire Wire Line
@@ -1038,16 +1037,15 @@ Wire Wire Line
 	10500 2100 8400 2100
 Connection ~ 9300 4850
 Wire Wire Line
-	8400 2100 8400 2000
+	8400 2100 8400 1900
 Text Notes 9500 5550 0    60   ~ 0
 Disable outputs\n  (key switch)
 NoConn ~ 8300 4925
-NoConn ~ 8300 2000
 Text Label 9150 2100 0    60   ~ 0
 +5V-Relay
 Text Label 9550 4850 0    60   ~ 0
 +5V-Relay
-Text Label 10300 5250 1    60   ~ 0
+Text Label 10450 5300 2    60   ~ 0
 +5V
 Text Label 7900 2200 1    60   ~ 0
 +5V
@@ -1058,4 +1056,14 @@ NoConn ~ 1950 1650
 NoConn ~ 1850 1650
 Connection ~ 3900 6600
 Connection ~ 4100 6600
+Wire Wire Line
+	8300 1900 8300 2000
+Wire Wire Line
+	8300 2000 10600 2000
+Wire Wire Line
+	10600 2000 10600 5300
+Text Label 9325 2000 2    60   ~ 0
++5V
+Text Label 7550 3650 3    60   ~ 0
+GND
 $EndSCHEMATC

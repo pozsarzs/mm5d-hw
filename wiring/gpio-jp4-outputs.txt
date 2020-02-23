@@ -1,4 +1,11 @@
-Wiring of GPIO port - J5 connector
+Wiring of GPIO port - outputs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Connector of card: JP4
+Colors of wire:    black   GND
+                   blue    output port
+                   red     +5 V
+
 --------------------------------------------------------------------------------
 target                      name  pin  |  pin  name                       target
 --------------------------------------------------------------------------------
