@@ -4,7 +4,6 @@ Wiring of GPIO port - displays
 Connector of card: JP1
 Colors of wire:    black   GND
                    purple  output port
-                   red     +5 V
                    white   communication
                    yellow  +3.3 V
 
@@ -12,8 +11,8 @@ Colors of wire:    black   GND
 target                      name  pin  |  pin  name                       target
 --------------------------------------------------------------------------------
                                      +---+
-                           +3.3V   1 |o o|  2  +5V <-------red----------> U3/VCC
-                           GPIO2   3 |o o|  4  +5V <-------red--------> F1, D1/C
+                           +3.3V   1 |o o|  2  +5V
+                           GPIO2   3 |o o|  4  +5V
                            GPIO3   5 |o o|  6  GND <-------black--------> U4/GND
                            GPIO4   7 |o o|  8  TXD
 J1/2, D1/A <--black--------> GND   9 |o o| 10  RXD

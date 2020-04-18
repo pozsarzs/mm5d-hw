@@ -278,13 +278,7 @@ Text Label 9350 4250 2    60   ~ 0
 GPIO19
 Text Label 6050 2550 0    60   ~ 0
 +5V
-Text Label 9950 2550 0    60   ~ 0
-+5V
-Text Label 9950 2650 0    60   ~ 0
-+5V
-Text Label 8200 4750 0    60   ~ 0
-+5V
-Text Label 9150 2300 0    60   ~ 0
+Text Label 8200 4925 1    60   ~ 0
 +5V
 Text Label 9950 2750 0    60   ~ 0
 GND
@@ -442,13 +436,9 @@ Wire Wire Line
 Wire Wire Line
 	4400 3350 5500 3350
 Wire Wire Line
-	6000 2550 6325 2550
+	6450 2550 6000 2550
 Wire Wire Line
-	6325 2550 6325 1950
-Wire Wire Line
-	6325 1950 3300 1950
-Wire Wire Line
-	3300 1950 3300 1150
+	3300 1150 3300 2350
 Wire Wire Line
 	3300 1150 4000 1150
 Wire Wire Line
@@ -516,14 +506,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 4650 9100 4925
 Wire Wire Line
-	8200 4925 8200 4750
-Wire Wire Line
-	8200 4750 10300 4750
-Wire Wire Line
-	10300 4750 10300 2650
-Wire Wire Line
-	10300 2650 9900 2650
-Wire Wire Line
 	9400 2650 8600 2650
 Wire Wire Line
 	8600 2650 8600 1900
@@ -535,14 +517,6 @@ Wire Wire Line
 	8800 1900 8800 2850
 Wire Wire Line
 	8800 2850 9400 2850
-Wire Wire Line
-	8200 1900 8200 2300
-Wire Wire Line
-	8200 2300 10300 2300
-Wire Wire Line
-	10300 2300 10300 2550
-Wire Wire Line
-	10300 2550 9900 2550
 Wire Wire Line
 	9900 3150 10400 3150
 Wire Wire Line
@@ -616,9 +590,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 5250 2450 6300
 Wire Wire Line
-	2550 2650 3200 2650
-Wire Wire Line
-	3200 2650 3200 5350
+	3200 3050 3200 5350
 Wire Wire Line
 	3200 5350 2050 5350
 Wire Wire Line
@@ -751,54 +723,54 @@ Text Notes 5300 950  0    60   ~ 0
 Matrix display
 Wire Wire Line
 	3700 6700 3700 6650
-Text Label 2600 2550 0    60   ~ 0
-+5V
 Wire Wire Line
-	3900 2950 3900 6700
+	3900 2950 3900 3850
+Wire Wire Line
+	3900 3850 3900 4550
+Wire Wire Line
+	3900 4550 3900 5650
+Wire Wire Line
+	3900 5650 3900 6600
+Wire Wire Line
+	3900 6600 3900 6700
 Wire Wire Line
 	3500 6100 3500 6200
 Wire Wire Line
 	3500 6200 3700 6200
 Wire Wire Line
-	3450 4400 4150 4400
+	3450 4400 3700 4400
+Wire Wire Line
+	3700 4400 4150 4400
 Connection ~ 3700 6200
 Wire Wire Line
 	3500 5800 3500 5650
 Wire Wire Line
 	3500 5650 3900 5650
 Wire Wire Line
-	3450 3850 4150 3850
+	3450 3850 3900 3850
+Wire Wire Line
+	3900 3850 4150 3850
 Connection ~ 3900 5650
 Text Notes 3575 7275 0    60   ~ 0
   Power in\n(5V 2.5A DC)
 Wire Wire Line
-	1750 1650 1750 2150
+	3700 2350 3700 3050
 Wire Wire Line
-	1750 2150 2950 2150
+	3700 3050 3700 4400
 Wire Wire Line
-	2950 2150 2950 2550
-Text Label 2600 2650 0    60   ~ 0
-+5V
-Text Label 1750 1700 3    60   ~ 0
-+5V
+	3700 4400 3700 4850
 Wire Wire Line
-	2950 2550 2550 2550
+	3700 5150 3700 6200
 Wire Wire Line
-	3700 2350 3700 4850
+	3700 6200 3700 6350
 Wire Wire Line
-	3700 5150 3700 6350
+	3300 2350 3700 2350
 Wire Wire Line
 	3700 2350 6450 2350
-Wire Wire Line
-	6450 1950 6450 2650
-Wire Wire Line
-	6450 2650 6000 2650
 Wire Wire Line
 	5500 2950 3900 2950
 Text Label 5450 2950 2    60   ~ 0
 GND
-Text Label 6050 2650 0    60   ~ 0
-+5V
 NoConn ~ 6000 3150
 NoConn ~ 2550 3150
 Text Notes 3675 7050 0    60   ~ 0
@@ -832,7 +804,9 @@ $EndComp
 Wire Wire Line
 	4100 6700 4100 6600
 Wire Wire Line
-	3900 6600 4425 6600
+	3900 6600 4100 6600
+Wire Wire Line
+	4100 6600 4425 6600
 Wire Wire Line
 	4425 6600 4425 6750
 Text Notes 7975 6350 0    60   ~ 0
@@ -906,12 +880,12 @@ $EndComp
 $Comp
 L CP C4
 U 1 1 5E451945
-P 8150 3050
-F 0 "C4" V 8300 3050 50  0000 L CNN
-F 1 "4.7u" V 7950 3000 50  0000 L CNN
-F 2 "" H 8188 2900 50  0000 C CNN
-F 3 "" H 8150 3050 50  0000 C CNN
-	1    8150 3050
+P 8050 3050
+F 0 "C4" V 8200 3050 50  0000 L CNN
+F 1 "4.7u" V 7850 3000 50  0000 L CNN
+F 2 "" H 8088 2900 50  0000 C CNN
+F 3 "" H 8050 3050 50  0000 C CNN
+	1    8050 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -926,7 +900,11 @@ F 3 "" H 7340 2200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 3050 8700 3050
+	8200 3050 8400 3050
+Wire Wire Line
+	8400 3050 8600 3050
+Wire Wire Line
+	8600 3050 8700 3050
 Wire Wire Line
 	9000 3050 9400 3050
 Wire Wire Line
@@ -938,14 +916,20 @@ Connection ~ 8400 3050
 Text Label 9350 3050 2    60   ~ 0
 GPIO17
 Wire Wire Line
-	7850 3050 8000 3050
+	7850 3050 7900 3050
+Wire Wire Line
+	7900 3050 7900 3050
 Wire Wire Line
 	7900 2750 7900 3050
 Connection ~ 7900 3050
 Wire Wire Line
-	7550 3250 7550 4550
+	7550 3250 7550 3550
 Wire Wire Line
-	7550 3550 8600 3550
+	7550 3550 7550 4550
+Wire Wire Line
+	7550 3550 8400 3550
+Wire Wire Line
+	8400 3550 8600 3550
 Wire Wire Line
 	8600 3550 8600 3450
 Wire Wire Line
@@ -958,9 +942,13 @@ Wire Wire Line
 Wire Wire Line
 	7550 2250 7900 2250
 Wire Wire Line
-	7900 1950 7900 2450
+	7900 1950 7900 2250
+Wire Wire Line
+	7900 2250 7900 2450
 Wire Wire Line
 	6450 1950 7900 1950
+Wire Wire Line
+	7900 1950 8200 1950
 Connection ~ 7900 2250
 Connection ~ 6450 2350
 Wire Wire Line
@@ -1026,7 +1014,9 @@ Wire Wire Line
 Wire Wire Line
 	8400 4925 8400 4850
 Wire Wire Line
-	8400 4850 10500 4850
+	8400 4850 9300 4850
+Wire Wire Line
+	9300 4850 10500 4850
 Wire Wire Line
 	9300 4850 9300 5300
 Wire Wire Line
@@ -1066,4 +1056,25 @@ Text Label 9325 2000 2    60   ~ 0
 +5V
 Text Label 7550 3650 3    60   ~ 0
 GND
+Wire Wire Line
+	3200 3050 3700 3050
+Connection ~ 3700 3050
+NoConn ~ 2550 2650
+NoConn ~ 2550 2550
+Connection ~ 3700 2350
+Wire Wire Line
+	6450 1950 6450 2350
+Wire Wire Line
+	6450 2350 6450 2550
+NoConn ~ 6000 2650
+NoConn ~ 9900 2650
+NoConn ~ 9900 2550
+Wire Wire Line
+	8200 1900 8200 1950
+Wire Wire Line
+	8200 1950 8200 4925
+Text Label 8200 2200 1    60   ~ 0
++5V
+Connection ~ 8200 1950
+Connection ~ 7900 1950
 $EndSCHEMATC
