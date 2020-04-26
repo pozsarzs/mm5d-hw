@@ -2,8 +2,7 @@ Wiring of GPIO port - inputs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Connector of card: JP2
-Colors of wire:    black   GND
-                   green   input port
+Colors of wire:    green   input port
                    white   communication
                    yellow  +3.3 V
 
@@ -13,9 +12,9 @@ target                      name  pin  |  pin  name                       target
                                      +---+
                            +3.3V   1 |o o|  2  +5V
                            GPIO2   3 |o o|  4  +5V
-                           GPIO3   5 |o o|  6  GND <-------black----------> J2/5
+                           GPIO3   5 |o o|  6  GND
                            GPIO4   7 |o o|  8  TXD <-------white----------> J2/3
-U5/GND <------black--------> GND   9 |o o| 10  RXD <-------white----------> J2/2
+                             GND   9 |o o| 10  RXD <-------white----------> J2/2
                           GPIO17  11 |o o| 12  GPIO18 <----white-----> U5/SENSOR
 U5/OUT1 <-----green-----> GPIO27  13 |o o| 14  GND
 U5/OUT4 <-----green-----> GPIO22  15 |o o| 16  GPIO23 <----green-------> U5/OUT3

@@ -11,12 +11,12 @@ target                      name  pin  |  pin  name                       target
 --------------------------------------------------------------------------------
                                      +---+
                            +3.3V   1 |o o|  2  +5V <-------red----------> VCC5
-U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V
-U7/IN2 <------blue-------> GPIO3   5 |o o|  6  GND <-------black--------> U6/GND
+U7/IN1 <------blue-------> GPIO2   3 |o o|  4  +5V <-------red----------> VCC5
+U7/IN2 <------blue-------> GPIO3   5 |o o|  6  GND <-------black--------> GND
 U7/IN3 <------blue-------> GPIO4   7 |o o|  8  TXD
                              GND   9 |o o| 10  RXD
 R1/1 <--------blue----->  GPIO17  11 |o o| 12  GPIO18
-                          GPIO27  13 |o o| 14  GND <-------black--------> U7/GND
+                          GPIO27  13 |o o| 14  GND
                           GPIO22  15 |o o| 16  GPIO23
                            +3.3V  17 |o o| 18  GPIO24
                             MOSI  19 |o o| 20  GND
