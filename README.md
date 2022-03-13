@@ -5,7 +5,7 @@ GitHub: <https://github.com/pozsarzs/mm5d-hw>
 
 **Documentation**
 
-- version:             2.0
+- version:             3.0
 - language:            en, hu
 - licence:             CC-BY-NC-4.0
 
