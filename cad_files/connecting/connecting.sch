@@ -273,34 +273,26 @@ Wire Notes Line
 Wire Notes Line
 	1250 825  1250 1725
 Wire Wire Line
-	8475 1625 8475 2050
-Wire Wire Line
-	8475 2050 8475 2500
+	8475 1625 8475 2500
 Wire Wire Line
 	8225 1625 8225 2500
 Wire Wire Line
 	7975 1625 7975 3425
 Wire Wire Line
-	7975 3425 8225 3425
-Wire Wire Line
-	8225 3425 8475 3425
+	7975 3425 8475 3425
 Wire Wire Line
 	8475 3425 8475 3350
 Wire Wire Line
 	8225 3350 8225 3425
 Connection ~ 8225 3425
 Wire Wire Line
-	9375 1625 9375 2150
-Wire Wire Line
-	9375 2150 9375 2500
+	9375 1625 9375 2500
 Wire Wire Line
 	9125 1625 9125 2500
 Wire Wire Line
 	8875 1625 8875 3425
 Wire Wire Line
-	8875 3425 9125 3425
-Wire Wire Line
-	9125 3425 9375 3425
+	8875 3425 9375 3425
 Wire Wire Line
 	9375 3425 9375 3350
 Wire Wire Line
@@ -503,15 +495,11 @@ Wire Wire Line
 Wire Wire Line
 	6450 5000 5800 5000
 Wire Wire Line
-	5800 5000 5800 5200
-Wire Wire Line
-	5800 5200 5800 5475
+	5800 5000 5800 5475
 Wire Wire Line
 	7100 5200 7100 5475
 Wire Wire Line
-	5800 5200 6450 5200
-Wire Wire Line
-	6450 5200 7100 5200
+	5800 5200 7100 5200
 Connection ~ 5800 5200
 Wire Wire Line
 	6450 5475 6450 5200
@@ -612,10 +600,10 @@ F 3 "~" H 8400 5625 60  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L SCREW_CONN_1 U7/K1/NO
+L SCREW_CONN_1 U7/K1/NC
 U 1 1 5D87D8F6
 P 8650 5625
-F 0 "U7/K1/NO" H 8730 5625 40  0000 L CNN
+F 0 "U7/K1/NC" H 8730 5625 40  0000 L CNN
 F 1 "SCREW_CONN_1" H 8650 5680 30  0001 C CNN
 F 2 "~" H 8650 5625 60  0000 C CNN
 F 3 "~" H 8650 5625 60  0000 C CNN
@@ -765,20 +753,9 @@ $EndComp
 Wire Wire Line
 	7750 5475 7750 5200
 Wire Wire Line
-	7750 5200 8400 5200
-Wire Wire Line
-	8400 5200 9050 5200
-Wire Wire Line
-	9050 5200 9700 5200
-Wire Wire Line
-	9700 5200 10450 5200
-Wire Wire Line
-	8400 5200 8400 5475
+	7750 5200 10450 5200
 Wire Wire Line
 	9050 5200 9050 5475
-Connection ~ 8400 5200
-Wire Wire Line
-	9700 5200 9700 5475
 Connection ~ 9050 5200
 Wire Notes Line
 	8825 4050 8825 4725
@@ -793,22 +770,12 @@ Wire Wire Line
 Wire Wire Line
 	9025 4225 9025 4150
 Wire Wire Line
-	9025 4150 9300 4150
-Wire Wire Line
-	9300 4150 9575 4150
+	9025 4150 9575 4150
 Wire Wire Line
 	9575 4150 9575 4225
 Wire Wire Line
-	9300 3900 9300 4150
-Wire Wire Line
-	9300 4150 9300 4225
+	9300 3900 9300 4225
 Connection ~ 9300 4150
-Wire Wire Line
-	8650 5475 8650 5100
-Wire Wire Line
-	8650 5100 9025 5100
-Wire Wire Line
-	9025 5100 9025 4625
 Wire Wire Line
 	9950 5475 9950 5100
 Wire Wire Line
@@ -829,9 +796,7 @@ $EndComp
 Wire Wire Line
 	8000 5475 8000 4575
 Wire Wire Line
-	8000 3900 9300 3900
-Wire Wire Line
-	9300 3900 10075 3900
+	8000 3900 10075 3900
 Wire Wire Line
 	8000 3900 8000 4275
 $Comp
@@ -859,7 +824,6 @@ Text GLabel 10450 4850 2    60   Input ~ 0
 24V_N
 Text Notes 10225 4675 0    60   ~ 0
     Mains\n24 V 50/60 Hz\n    PELV
-Connection ~ 9700 5200
 Wire Wire Line
 	10075 4850 10450 4850
 Connection ~ 9300 3900
@@ -885,9 +849,7 @@ Signal lamps
 Text Notes 9075 4650 0    60   ~ 0
 G     Y     R
 Wire Wire Line
-	3250 1625 3250 3925
-Wire Wire Line
-	3250 3925 3250 5475
+	3250 1625 3250 5475
 Wire Wire Line
 	3500 5475 3500 1625
 Wire Wire Line
@@ -941,9 +903,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4225 4000 3925
 Wire Wire Line
-	3250 3925 4000 3925
-Wire Wire Line
-	4000 3925 4250 3925
+	3250 3925 4250 3925
 Connection ~ 3250 3925
 Wire Wire Line
 	4250 3925 4250 4225
@@ -1001,12 +961,56 @@ Text Notes 4125 5025 1    60   ~ 0
 Water pressure
 Wire Wire Line
 	5400 2625 4650 2625
-Wire Wire Line
-	4650 2625 4650 5475
 Text Notes 4850 6200 0    60   ~ 0
 Data
 Text Notes 8375 3600 0    60   ~ 0
 Manual on/off
 Text Notes 4975 2500 0    60   ~ 0
 T/RH sensor
+$Comp
+L SCREW_CONN_1 U7/K2/NC
+U 1 1 641C7442
+P 9175 5625
+F 0 "U7/K2/NC" H 9255 5625 40  0000 L CNN
+F 1 "SCREW_CONN_1" H 9175 5680 30  0001 C CNN
+F 2 "~" H 9175 5625 60  0000 C CNN
+F 3 "~" H 9175 5625 60  0000 C CNN
+	1    9175 5625
+	0    -1   1    0   
+$EndComp
+$Comp
+L SCREW_CONN_1 U7/K3/NC
+U 1 1 641C7520
+P 9825 5625
+F 0 "U7/K3/NC" H 9905 5625 40  0000 L CNN
+F 1 "SCREW_CONN_1" H 9825 5680 30  0001 C CNN
+F 2 "~" H 9825 5625 60  0000 C CNN
+F 3 "~" H 9825 5625 60  0000 C CNN
+	1    9825 5625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9175 5475 9175 5275
+Wire Wire Line
+	9175 5275 9700 5275
+Wire Wire Line
+	9700 5275 9700 5475
+Wire Wire Line
+	9825 5475 9825 5025
+Wire Wire Line
+	9825 5025 9025 5025
+Wire Wire Line
+	9025 5025 9025 4625
+Wire Wire Line
+	8400 5475 8400 4875
+Wire Wire Line
+	8400 4875 4650 4875
+Wire Wire Line
+	4650 4875 4650 5475
+Wire Wire Line
+	4650 2625 4650 4750
+Wire Wire Line
+	4650 4750 8650 4750
+Wire Wire Line
+	8650 4750 8650 5475
 $EndSCHEMATC
